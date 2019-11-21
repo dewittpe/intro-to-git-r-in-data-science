@@ -1,0 +1,85 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+\usepackage{xcolor}
+%\usefonttheme{serif}
+
+\definecolor{cugold}{RGB}{207,184,124}
+\definecolor{cublack}{RGB}{0,0,0}
+\definecolor{cudarkgray}{RGB}{86,90,92}
+\definecolor{culightgray}{RGB}{162,164,163}
+
+\setbeamercolor*{titlelike}{fg=cugold,bg=cublack}
+\setbeamercolor*{frametitle}{fg=cugold,bg=cublack}
+
+\setbeamercolor*{palette primary}{fg=cugold,bg=cublack}
+\setbeamercolor*{palette secondary}{fg=cublack,bg=cudarkgray}
+\setbeamercolor*{palette tertiary}{fg=cublack,bg=culightgray}
+
+\setbeamercolor{section number projected}{bg=cublack,fg=cugold}
+
+\setbeamertemplate{itemize item}{\color{cublack}$\bullet$}
+\setbeamertemplate{itemize subitem}{\color{cugold}$\blacktriangleright$}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\makeatletter
+\renewcommand{\@makefnmark}{\hbox{\textsuperscript{\tiny{\@thefnmark}}}}
+\makeatother
+
+
+% ---------------------------------------------------------------------------- %
+%                                Document info
+
+\author[Peter E. DeWitt]{Peter E. DeWitt, Ph.D.\inst{1} \\ peter.dewitt@cuanschutz.edu}
+\institute[]{SOM | Department of Pediatrics | Informatics and Data Science}
+\title[Intro to Git]{Git: Distributed Version Control \\ {\small An Introduction}}
+\date{5 December 2019}
+
+% ---------------------------------------------------------------------------- %
+%                                   Document
+
+\begin{document}
+
+  \begin{frame}[t,plain]
+    \titlepage
+    \includegraphics[width=0.7\textwidth]{som_pediatrics}
+  \end{frame}
+
+  \begin{frame}[t]
+    \frametitle{Outline}
+    \framesubtitle{Why? and little bit of How?}
+    \tableofcontents[hideallsubsections]
+  \end{frame}
+
+ \section{Overview of Version Control Systems}
+  \begin{frame}
+    \frametitle{}
+  \end{frame}
+
+ \section{Acquiring git}
+  \begin{frame}
+    \frametitle{}
+  \end{frame}
+
+ \section{Basic Use}
+  \begin{frame}
+    \frametitle{}
+  \end{frame}
+
+ \section{Remotes}
+  \begin{frame}
+    \frametitle{}
+  \end{frame}
+
+ \section{Other Tools and Resources}
+  \begin{frame}
+    \frametitle{}
+  \end{frame}
+
+\end{document}
+
