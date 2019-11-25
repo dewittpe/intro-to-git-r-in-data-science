@@ -102,3 +102,102 @@
   \includegraphics[height=0.80\textheight]{distributed-vcs}
   \footnote{https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control}
 \end{frame}
+
+\begin{frame}
+  \frametitle{Short History of Git}
+  \begin{itemize}
+    \item Original Author: Linus Torvalds
+    \item Version 0.99 released July 2005
+    \item Current version 2.24
+    \item Linux vs BitKeeper
+    \item Linux dev community sets out to develop their own DVCS with the
+      goals of:
+      \begin{itemize}
+        \item speed
+        \item simple design
+        \item strong support for non-linear development (thousands of parallel
+          branches)
+        \item fully distributed
+        \item able to handle large projects, line the Linux kernel, efficiently
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Snapshots; Not Differences}
+  \centering
+  \includegraphics[width=0.90\textwidth]{snapshots}
+  \footnote{https://git-scm.com/book/en/v2/Getting-Started-What-is-Git\%3F}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Nearly Every Operation is Local}
+  \begin{itemize}
+    \item Most operations are local
+      \begin{itemize}
+        \item No need to talk to other computers on a network
+        \item The entire project history is on your local machine
+      \end{itemize}
+    \item You can work off vpn
+    \item You can work offline
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Git Has Integrity}
+  \begin{itemize}
+    \item Everything is check-summed (remember the sha?)
+    \item You cannot lose information in transit nor get a file corruption
+      without git being able to detect it
+    \item git stores everything in its database not by file name but by the has
+      value of its contents
+    \item git has been designed for multiple parallel development, i.e.,
+      multiple programmers contributing to one project non-linearly in time
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Git Generally Only Adds Dat}
+  \begin{itemize}
+    \item Nearly all actions in git add data to the git database
+    \item It is difficult to do anything that is not undoable
+    \item You can lose/corrupt un-committed changes
+    \item It is very difficult to lose anything after a commit, especially with
+      frequent pushes to other repositories
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Three Stages}
+  \begin{itemize}
+    \item Git has three main states that files reside in
+      \begin{enumerate}
+        \item Committed: data is safely stored in the local database
+        \item Modified: changed the file(s) but have not committed to the
+          data base yet
+        \item Staged: marked modified files(s) in current version to go into the
+          next commit snapshot
+      \end{enumerate}
+    \item This leads to three main sections of a git project
+      \begin{enumerate}
+        \item the .git directory
+        \item the working directory
+        \item the staging area
+      \end{enumerate}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Three Stages}
+  \begin{center}
+  \includegraphics[width=0.5\textwidth]{areas}
+  \end{center}
+
+  Basic Git workflow
+  \begin{itemize}
+    \item Modify: make changes in the working directory
+    \item Stage: adding snapshots to the staging area
+    \item Commit: take the files are they are in the staging area and stores the
+      snapshot in the .git directory
+  \end{itemize}
+\end{frame}
