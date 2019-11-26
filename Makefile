@@ -2,7 +2,7 @@
 
 all : slides/intro-to-git.pdf
 
-slides/intro-to-git.pdf : slides/intro-to-git.tex slides/overview.tex slides/acquiring-git.tex eglog.log egdiff
+slides/intro-to-git.pdf : slides/intro-to-git.tex slides/overview.tex slides/acquiring-git.tex slides/basic-use.tex eglog.log egdiff
 	latexmk $< --pdf --outdir=slides --shell-escape
 
 eglog.log egdiff : make-eg-git-log.sh
