@@ -17,6 +17,19 @@ Topics to be covered:
    * commit
    * diff
    * status
+   * checkout
 1. Use of Remotes
 1. Other Tools
+
+## Basic Use
+
+Planning to have the basic use section done as a live example.  Files in the
+directory `files-for-live-example` are for this example.
+
+The data set came from https://nces.ed.gov/ipeds/Search/ViewTable?tableId=12607&returnUrl=%2Fipeds%2FSearch#
+and is the "undergraduate and graduate enrollment: Twelve-month undergraduate and graduate enrollment, by region and state or jurisdiction: 2006–07 through 2013–14"
+
+An R script has been provided has a guide for the code to be generated in
+sequence for the for the example.
+
 
