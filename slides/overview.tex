@@ -33,7 +33,7 @@
 
 \begin{frame}
   \frametitle{Git: A Version Control System}
-  A snapshot of the working directory is taken and \emph{commit}ed to the git data base.
+  A snapshot of the working directory is taken and \emph{commit}ted to the git data base.
   \begin{itemize}
     \item Unique identifier
       \begin{itemize}
@@ -149,7 +149,7 @@
     \item Everything is check-summed (remember the sha?)
     \item You cannot lose information in transit nor get a file corruption
       without git being able to detect it
-    \item git stores everything in its database not by file name but by the has
+    \item git stores everything in its database not by file name but by the hash
       value of its contents
     \item git has been designed for multiple parallel development, i.e.,
       multiple programmers contributing to one project non-linearly in time
@@ -197,7 +197,6 @@
   \begin{itemize}
     \item Modify: make changes in the working directory
     \item Stage: adding snapshots to the staging area
-    \item Commit: take the files are they are in the staging area and stores the
-      snapshot in the .git directory
+    \item Commit: move the shapshot in the staging area to the .git database
   \end{itemize}
 \end{frame}
